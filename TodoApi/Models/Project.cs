@@ -10,6 +10,6 @@ namespace TodoApi.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public User Owner { get; set; }
-        public List<ProjectTask> Tasks { get; set; }
+        public List<ProjectTask> Tasks { get; set; } = new List<ProjectTask>();
     }
 }

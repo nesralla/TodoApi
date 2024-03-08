@@ -12,10 +12,10 @@ namespace TodoApi.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime DueDate { get; set; }
-        public ProjectTaskPriority Priority { get; set; }
-        public ProjectTaskStatus Status { get; set; }
-        public List<ProjectTaskHistory> History { get; set; }
-        public List<Comment> Comments { get; set; }
+        public ProjectTaskPriority Priority { get; set; } = new ProjectTaskPriority();
+        public ProjectTaskStatus Status { get; set; } = new ProjectTaskStatus();
+        public List<ProjectTaskHistory> History { get; set; } = new List<ProjectTaskHistory>();
+        public List<Comment> Comments { get; set; } = new List<Comment>();
         public User AssignedTo { get; set; }
 
     }
